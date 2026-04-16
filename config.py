@@ -4,10 +4,10 @@ import os
 #  إعدادات بوت جمهورية السادس
 # ===============================
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
 
 # يوزرنيم القناة بدون @
-CHANNEL_USERNAME = os.environ.get("CHANNEL_USERNAME", "")
+CHANNEL_USERNAME = os.environ.get("CHANNEL_USERNAME", "").strip()
 
 # آيدي الأدمنات (مفصولة بفاصلة في Railway)
 _admins = os.environ.get("ADMIN_IDS", "")
